@@ -10,7 +10,7 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  */
-package org.openhab.binding.luxtronik1.internal;
+package org.openhab.binding.luxtronik1.internal.config;
 
 /**
  * The {@link Luxtronik1Configuration} class contains fields mapping thing configuration parameters.
@@ -22,14 +22,15 @@ public class Luxtronik1Configuration {
     /**
      * Sample configuration parameter. Replace with your own.
      */
-    public String serialPort;
+    public String portName;
     public int refreshInterval;
-    public boolean enableReadCommands;
-    public boolean enableWriteCommands;
+    //public boolean enableReadCommands;
+    //public boolean enableWriteCommands;
 
     public String toString() {
-        return "Luxtronik1Configuration: serialPort=" + serialPort +
-                ", enableReadCommands" + enableReadCommands +
-                ", enableWriteCommands" + enableWriteCommands;
+        return "Luxtronik1Configuration: portName=" + portName +
+                ", refreshInterval=" + refreshInterval; // +
+                //", enableReadCommands=" + enableReadCommands +
+                //", enableWriteCommands=" + enableWriteCommands;
     }
 }

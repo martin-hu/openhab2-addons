@@ -5,28 +5,41 @@
 	xsi:schemaLocation="https://openhab.org/schemas/thing-description/v1.0.0 https://openhab.org/schemas/thing-description-1.0.0.xsd">
 
 	<!-- Sample Thing Type -->
-	<thing-type id="sample">
-		<label>Luxtronik1 Binding Thing</label>
-		<description>Sample thing for Luxtronik1 Binding</description>
+	<thing-type id="luxtronix1">
+		<label>Luxtronik1 heatpump</label>
+		<description>RS232 connected Luxtronik1 heatpump</description>
 
 		<channels>
-			<channel id="channel1" typeId="sample-channel" />
+			<channel-group id="deviceValues" typeId="deviceValues" />
 		</channels>
 
 		<config-description>
-			<parameter name="config1" type="text" required="true">
-				<label>Sample Parameter</label>
-				<description>This is a sample text configuration parameter</description>
+			<parameter name="portName" type="text" required="true">
+				<label>Serial port</label>
+				<context>serial-port</context>
+				<description>The serial port used to connect to the heat pump.</description>
+			</parameter>
+			<parameter name="refreshInterval" type="integer" max="65535" min="10" required="false">
+				<default>60</default>
+				<label>Refresh interval</label>
+				<description>Refresh interval in seconds.</description>
 			</parameter>
 		</config-description>
 
 	</thing-type>
 
 	<!-- Sample Channel Type -->
-	<channel-type id="sample-channel">
-		<item-type>luxtronik1Item</item-type>
-		<label>Luxtronik1 Binding Channel</label>
-		<description>Sample channel for Luxtronik1 Binding</description>
+	<channel-group-type id="deviceValues">
+		<label>Device Values</label>
+		<channels>
+			<channel id="firwareVersion" typeId="firmwareVersionState"/>
+		</channels>
+	</channel-group-type>
+
+	<channel-type id="firmwareVersion" advanced="true">
+		<item-type>String</item-type>
+		<label>Firware version</label>
+		<state readOnly="true"/>
 	</channel-type>
 
 </thing:thing-descriptions>

@@ -27,7 +27,7 @@ public class Luxtronik1BindingConstants {
     private static final String BINDING_ID = "luxtronik1";
 
     // List of all Thing Type UIDs
-    public static final ThingTypeUID THING_TYPE_SAMPLE = new ThingTypeUID(BINDING_ID, "sample");
+    public static final ThingTypeUID LUXTRONIC1_TYPE = new ThingTypeUID(BINDING_ID, "luxtronix1");
 
     // List of all Channel ids
     public static final String CHANNEL_1 = "channel1";
