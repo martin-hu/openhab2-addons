@@ -10,7 +10,7 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  */
-package org.openhab.binding.luxtronik1.internal;
+package org.openhab.binding.luxtronik1.internal.handler;
 
 import static org.openhab.binding.luxtronik1.internal.Luxtronik1BindingConstants.*;
 
@@ -22,6 +22,7 @@ import org.eclipse.smarthome.core.thing.ThingStatus;
 import org.eclipse.smarthome.core.thing.binding.BaseThingHandler;
 import org.eclipse.smarthome.core.types.Command;
 import org.eclipse.smarthome.core.types.RefreshType;
+import org.openhab.binding.luxtronik1.internal.config.Luxtronik1Configuration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -37,6 +38,7 @@ public class Luxtronik1Handler extends BaseThingHandler {
     private final Logger logger = LoggerFactory.getLogger(Luxtronik1Handler.class);
 
     private @Nullable Luxtronik1Configuration config;
+    //private ScheduledFuture<?> pollingJob;
 
     public Luxtronik1Handler(Thing thing) {
         super(thing);
@@ -87,7 +89,16 @@ public class Luxtronik1Handler extends BaseThingHandler {
             }
         });
 
-        // logger.debug("Finished initializing!");
+
+
+
+        /*
+        pollingJob = scheduler.scheduleWithFixedDelay(() -> {
+            logger.debug("schedule called");
+        }, 0, config.refreshInterval, TimeUnit.SECONDS);
+         */
+
+        logger.debug("Finished initializing!");
 
         // Note: When initialization can NOT be done set the status with more details for further
         // analysis. See also class ThingStatusDetail for all available status details.
@@ -95,4 +106,14 @@ public class Luxtronik1Handler extends BaseThingHandler {
         // updateStatus(ThingStatus.OFFLINE, ThingStatusDetail.CONFIGURATION_ERROR,
         // "Can not access device as username and/or password are invalid");
     }
+
+    @Override
+    public void dispose() {
+        /*
+        if(pollingJob != null) {
+            pollingJob.cancel(true);
+        }
+         */
+    }
+
 }

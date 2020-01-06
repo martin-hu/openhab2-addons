@@ -1,0 +1,202 @@
+[
+  {
+    "type": "HmIP-STHD",
+    "version": "2.2.2"
+  },
+  {
+    "type": "HM-LC-Dim1L-Pl-3",
+    "version": "2.9.7"
+  },
+  {
+    "type": "HmIPW-DRD3",
+    "version": "1.0.0"
+  },
+  {
+    "type": "HmIP-SMO",
+    "version": "1.2.8"
+  },
+  {
+    "type": "HmIP-SWO-PR",
+    "version": "1.0.18"
+  },
+  {
+    "type": "HM-ES-PMSw1-Pl-DN-R1",
+    "version": "2.5.9"
+  },
+  {
+    "type": "HmIP-SWO-B",
+    "version": "1.0.18"
+  },
+  {
+    "type": "HM-LC-RGBW-WM",
+    "version": "1.0.0"
+  },
+  {
+    "type": "HmIP-SRH",
+    "version": "1.2.10"
+  },
+  {
+    "type": "HmIP-SPI",
+    "version": "1.4.0"
+  },
+  {
+    "type": "HmIP-PDT",
+    "version": "1.4.8"
+  },
+  {
+    "type": "HmIP-PSM-IT",
+    "version": "2.6.2"
+  },
+  {
+    "type": "HmIP-PSM",
+    "version": "2.6.2"
+  },
+  {
+    "type": "HmIP-PS",
+    "version": "2.6.2"
+  },
+  {
+    "type": "HmIP-MIOB",
+    "version": "1.6.4"
+  },
+  {
+    "type": "HM-CC-RT-DN",
+    "version": "1.5.3"
+  },
+  {
+    "type": "HmIP-BBL",
+    "version": "1.6.2"
+  },
+  {
+    "type": "HmIP-PSM-PE",
+    "version": "2.6.2"
+  },
+  {
+    "type": "HM-LC-Dim1T-Pl-3",
+    "version": "2.9.5"
+  },
+  {
+    "type": "HmIP-BSM",
+    "version": "1.12.6"
+  },
+  {
+    "type": "HmIP-PDT-UK",
+    "version": "1.4.8"
+  },
+  {
+    "type": "HmIP-SMI",
+    "version": "1.4.8"
+  },
+  {
+    "type": "HmIP-STH",
+    "version": "2.2.0"
+  },
+  {
+    "type": "HmIP-FDT",
+    "version": "1.4.8"
+  },
+  {
+    "type": "HM-Dis-EP-WM55",
+    "version": "1.2.0"
+  },
+  {
+    "type": "HmIP-SWDO-I",
+    "version": "1.16.10"
+  },
+  {
+    "type": "HM-LC-Dim1T-DR",
+    "version": "1.1.0"
+  },
+  {
+    "type": "HM-MOD-Re-8",
+    "version": "1.2.0"
+  },
+  {
+    "type": "HmIP-PSM-CH",
+    "version": "2.6.2"
+  },
+  {
+    "type": "HM-LC-Dim1TPBU-FM",
+    "version": "2.9.5"
+  },
+  {
+    "type": "HmIP-BWTH",
+    "version": "1.2.4"
+  },
+  {
+    "type": "HM-TC-IT-WM-W-EU",
+    "version": "1.4.2"
+  },
+  {
+    "type": "HM-LC-Bl1PBU-FM",
+    "version": "2.11.1"
+  },
+  {
+    "type": "HM-OU-CFM-TW",
+    "version": "1.3.0"
+  },
+  {
+    "type": "HmIP-BWTH",
+    "version": "1.2.4"
+  },
+  {
+    "type": "HmIP-FSM",
+    "version": "1.6.2"
+  },
+  {
+    "type": "HmIP-eTRV",
+    "version": "2.2.8"
+  },
+  {
+    "type": "HmIP-BROLL",
+    "version": "1.6.2"
+  },
+  {
+    "type": "HmIP-SMO-A",
+    "version": "1.2.8"
+  },
+  {
+    "type": "HmIP-eTRV-2",
+    "version": "2.2.8"
+  },
+  {
+    "type": "HmIP-SWDO",
+    "version": "1.16.8"
+  },
+  {
+    "type": "HmIP-PCBS",
+    "version": "2.10.2"
+  },
+  {
+    "type": "HmIP-WTH-2",
+    "version": "2.0.2"
+  },
+  {
+    "type": "HmIP-WTH",
+    "version": "2.2.0"
+  },
+  {
+    "type": "HmIP-BDT",
+    "version": "1.4.8"
+  },
+  {
+    "type": "HmIP-FSM16",
+    "version": "1.6.2"
+  },
+  {
+    "type": "HmIP-PSM-UK",
+    "version": "2.6.2"
+  },
+  {
+    "type": "HM-LC-Dim1PWM-CV",
+    "version": "2.9.5"
+  },
+  {
+    "type": "HmIP-SWO-PL",
+    "version": "1.0.18"
+  },
+  {
+    "type": "HM-Sen-MDIR-WM55",
+    "version": "1.2.0"
+  }
+]
