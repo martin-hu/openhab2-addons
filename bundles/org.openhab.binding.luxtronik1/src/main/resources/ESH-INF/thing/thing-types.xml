@@ -5,13 +5,13 @@
 	xsi:schemaLocation="https://openhab.org/schemas/thing-description/v1.0.0 https://openhab.org/schemas/thing-description-1.0.0.xsd">
 
 	<!-- Sample Thing Type -->
-	<thing-type id="luxtronix1">
+	<thing-type id="serialLux1">
 		<label>Luxtronik1 heatpump</label>
 		<description>RS232 connected Luxtronik1 heatpump</description>
 
-		<channels>
+		<channel-groups>
 			<channel-group id="deviceValues" typeId="deviceValues" />
-		</channels>
+		</channel-groups>
 
 		<config-description>
 			<parameter name="portName" type="text" required="true">
@@ -36,10 +36,11 @@
 		</channels>
 	</channel-group-type>
 
-	<channel-type id="firmwareVersion" advanced="true">
+	<channel-type id="firmwareVersionState" advanced="true">
 		<item-type>String</item-type>
 		<label>Firware version</label>
 		<state readOnly="true"/>
 	</channel-type>
+
 
 </thing:thing-descriptions>

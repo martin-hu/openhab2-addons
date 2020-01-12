@@ -25,7 +25,10 @@ import org.eclipse.smarthome.core.thing.binding.BaseThingHandlerFactory;
 import org.eclipse.smarthome.core.thing.binding.ThingHandler;
 import org.eclipse.smarthome.core.thing.binding.ThingHandlerFactory;
 import org.openhab.binding.luxtronik1.internal.handler.Luxtronik1Handler;
+import org.openhab.binding.luxtronik1.internal.lux.Lux1Constants;
 import org.osgi.service.component.annotations.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * The {@link Luxtronik1HandlerFactory} is responsible for creating things and thing
@@ -37,10 +40,13 @@ import org.osgi.service.component.annotations.Component;
 @Component(configurationPid = "binding.luxtronik1", service = ThingHandlerFactory.class)
 public class Luxtronik1HandlerFactory extends BaseThingHandlerFactory {
 
-    private static final Set<ThingTypeUID> SUPPORTED_THING_TYPES_UIDS = Collections.singleton(LUXTRONIC1_TYPE);
+    private static final Set<ThingTypeUID> SUPPORTED_THING_TYPES_UIDS = Collections.singleton(THING_TYPE_SERIAL_LUX1);
+
+    private final Logger logger = LoggerFactory.getLogger(Luxtronik1HandlerFactory.class);
 
     @Override
     public boolean supportsThingType(ThingTypeUID thingTypeUID) {
+        logger.info("supportThings? {}", thingTypeUID);
         return SUPPORTED_THING_TYPES_UIDS.contains(thingTypeUID);
     }
 
@@ -48,7 +54,10 @@ public class Luxtronik1HandlerFactory extends BaseThingHandlerFactory {
     protected @Nullable ThingHandler createHandler(Thing thing) {
         ThingTypeUID thingTypeUID = thing.getThingTypeUID();
 
-        if (LUXTRONIC1_TYPE.equals(thingTypeUID)) {
+        logger.info("createHandler? {}", thingTypeUID);
+
+        if (THING_TYPE_SERIAL_LUX1.equals(thingTypeUID)) {
+            logger.info("createHandler type  THING_TYPE_SERIAL_LUX1");
             return new Luxtronik1Handler(thing);
         }
 
