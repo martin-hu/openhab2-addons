@@ -27,8 +27,13 @@ public class Luxtronik1BindingConstants {
     private static final String BINDING_ID = "luxtronik1";
 
     // List of all Thing Type UIDs
-    public static final ThingTypeUID LUXTRONIC1_TYPE = new ThingTypeUID(BINDING_ID, "luxtronix1");
 
     // List of all Channel ids
-    public static final String CHANNEL_1 = "channel1";
+    public static final ThingTypeUID THING_TYPE_SERIAL_LUX1 = new ThingTypeUID(BINDING_ID, "serialLux1");
+
+    public static final String CHANNEL_GROUP_DEVICE_VALUES = "deviceValues#";
+
+    // Serial thing
+    public static final String PORT_NAME = "portName";
+
 }
