@@ -252,6 +252,10 @@ public class ThirdGenerationHandler extends BaseThingHandler {
                 updateState(channeluid, new QuantityType<>(value, SmartHomeUnits.VOLT));
                 break;
             }
+            case HERTZ: {
+                updateState(channeluid, new QuantityType<>(value, SmartHomeUnits.HERTZ));
+                break;
+            }
             default: {
                 // unknown datatype
                 logger.debug("{} not known!", dataType);
